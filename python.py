@@ -1,67 +1,66 @@
-a =17
-b = 5
-print("Addition:", a+b)
-print("Subtraction:",a-b)
-print("Multiplication:",a*b)
-print("Division:",a/b)
-print("Floor Division:",a//b)
-print("Remainder:",a%b)
-print("Power:",a**b)
 
-#simple calcuater
-a =int(input("enter first number"))
-b =int(input("enter second number"))
 
-print("Addition:", a + b)
-print("Subtraction:", a-b)
-print("Multiplication:", a*b)
-print("Division:", a/b)
 
-#student marks calculator
-name = input("enter student name:")
+#comparision operators
+a = 10
+b = 20
+print(a==b)
+print(a!=b)
+print(a>b)
+print(a<b)
+print(a>=b)
+print(a<=b)
 
-a = int(input("enter python marks:"))
-b = int(input("enter java marks:"))
-c = int(input("enter SQL marks:"))
-total = a+b+c
-average = total/3
-print("total = ", total)
-print("average = ", average)
+#age eligibility check
+age = int(input("enter you age"))
 
-#shopping bill calculater
-price1 =float(input("enter product 1 price:"))
-price2 = float(input("enter product 2 price:"))
-price3 =float(input("enter product 3 price:"))
+print("eligibile:",age >= 18)
 
-totol = price1 + price2 + price3 
+#pass or fail checker
+marks = int (input("enter marks"))
+print("passed:", marks >=40)
 
-discount = total * 0.50
-final_amount = total - discount
-print("total:",total)
-print("discount:",discount)
-print("final amount:",final_amount)
+#login validation
+correct_username = "admin"
+correct_password = "1234"
+username = input("enter usename:")
+password = input ("enter password:")
+print(username==correct_username)
+print(password==correct_password)
 
-#salary calculator
-basic = float(input("enter basic salary:"))
-hra = basic * 0.30
-da = basic * 0.20
-gross_salary = basic + hra + da
-print("basic salary:",basic)
-print("HRA:",hra)
-print("DA:",da)
-print("gross salary:",gross_salary)
+#logical operators
+age = 25
+citizen = True
+print(age>=18 and citizen== True )
 
- #assignment operators
-x = 10
+has_card=False
+has_card=True
+print(has_card or has_card)
 
-x += 5
-print(x)
+is_logged_in = True
+print(not is_logged_in)
 
-x -= 2
-print(x)
+#atm eligibility checker
+balance = 10000
+withdraw = 5000
+print(withdraw > 0 and withdraw <= balance)
 
-x *= 3
-print(x)
+#studends scholorship eligibility checker
+marks = float(input("enter marks:"))
+attendence = float(input("enter attendence:"))
+eligible = marks>=85 and attendence>=75
+print("scholoship eligible:",eligible)
 
-x //= 2
-print(x)
+#identity operator
+a=None
+print(a is None)
+print(a is not None)
+
+#bitwise operators
+a = 8
+b = 6
+print(a&b)
+print(a|b)
+print(a^b)
+print(a<<b)
+print(a>>b)
